@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:gravity="center"
+    tools:context=".NewGameActivity">
+
+    <ScrollView
+        android:id="@+id/way_point"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp650"
+        android:maxHeight="@dimen/image_400"
+        android:maxWidth="@dimen/image_300"
+        android:layout_marginBottom="@dimen/dim_30"
+        android:foregroundGravity="center"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/vertical_bar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/grid_points"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/black"
+            android:layout_margin="0dp"
+            tools:context=".NewGameActivity" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/vertical_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:layout_marginBottom="@dimen/margin_side"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/way_point">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wait_text"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:text="@string/GPS_warning"
+            android:layout_marginBottom="@dimen/dim_30"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/button_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/black">
+
+            <Button
+                android:id="@+id/add_point"
+                android:layout_width="@dimen/buttonWidth2"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_marginRight="@dimen/button_margin"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:onClick="takePicture"
+                android:shadowColor="@color/shadow"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="Add Point"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text" />
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="@dimen/buttonWidth2"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:onClick="finishAdding"
+                android:shadowColor="@color/shadow"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="Done"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

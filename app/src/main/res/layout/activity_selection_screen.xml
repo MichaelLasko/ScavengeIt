@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".SelectionScreenActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="@dimen/image_100"
+        android:maxWidth="@dimen/margin_250"
+        android:maxHeight="@dimen/margin_250"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@id/it_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/it_logo"
+        android:src="@drawable/it_logo"
+        android:background="@color/white"
+        android:layout_width="@dimen/image_100"
+        android:layout_height="@dimen/image_100"
+        android:layout_marginLeft="@dimen/margin_170"
+        android:layout_marginRight="@dimen/margin_170"
+        android:layout_marginBottom="@dimen/margin_250"
+        android:adjustViewBounds="true"
+        android:maxWidth="@dimen/image_100"
+        android:maxHeight="@dimen/image_100"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintBottom_toTopOf="@id/button_box"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_box"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/button_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/it_logo"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/create_game"
+            android:text="@string/create_prompt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text"
+            android:layout_width="@dimen/app_bar_height"
+            android:layout_weight="1"
+            android:layout_height="@dimen/margin_side"
+            android:layout_marginHorizontal="@dimen/dim_30"
+            android:background="@drawable/button_shape"
+            android:shadowColor="@color/shadow"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:onClick="createGame"
+            />
+
+        <Button
+            android:id="@+id/modify_game"
+            android:text="@string/modify_game"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text"
+            android:layout_width="@dimen/app_bar_height"
+            android:layout_weight="1"
+            android:layout_height="@dimen/margin_side"
+            android:layout_marginHorizontal="@dimen/dim_30"
+            android:background="@drawable/button_shape"
+            android:shadowColor="@color/shadow"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:onClick="modifyGame"
+            />
+
+        <Button
+            android:id="@+id/start_new_game"
+            android:text="@string/game_prompt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text"
+            android:layout_width="@dimen/app_bar_height"
+            android:layout_weight="1"
+            android:layout_height="@dimen/margin_side"
+            android:layout_marginHorizontal="@dimen/dim_30"
+            android:background="@drawable/button_shape"
+            android:shadowColor="@color/shadow"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:onClick="startGame"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

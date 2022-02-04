@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Button
+        android:id="@+id/list"
+        android:layout_width="@dimen/buttonWidth2"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginLeft="@dimen/margin_side"
+        android:layout_gravity="bottom|left"
+        android:onClick="scavengerList"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/objectives"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"/>
+    <Button
+        android:id="@+id/game_enter"
+        android:layout_width="@dimen/buttonWidth2"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginRight="@dimen/margin_side"
+        android:layout_gravity="bottom|right"
+        android:onClick="enterAnswers"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/enter_results"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"  />
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/map_text_height"
+        android:layout_marginTop="@dimen/margin_text"
+        android:layout_marginHorizontal="@dimen/margin_text"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/text_35"
+        android:background="@color/transparent"
+        />
+</FrameLayout>

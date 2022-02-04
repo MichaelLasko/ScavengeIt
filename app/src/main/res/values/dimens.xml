@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">00dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="imageWidth">350dp</dimen>
+    <dimen name="imageHeight">500dp</dimen>
+    <dimen name="buttonWidth">160dp</dimen>
+    <dimen name="buttonHeight">40dp</dimen>
+    <dimen name="buttonWidth2">120dp</dimen>
+    <dimen name="margin_bottom">20dp</dimen>
+    <dimen name="margin_side">80dp</dimen>
+    <dimen name="margin_text">40dp</dimen>
+    <dimen name="map_text_height">150sp</dimen>
+    <dimen name="big_text">60sp</dimen>
+    <dimen name="button_text">15sp</dimen>
+    <dimen name="button_margin">60dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="image_300">300dp</dimen>
+    <dimen name="image_400">400dp</dimen>
+    <dimen name="image_100">100dp</dimen>
+    <dimen name="margin_170">170dp</dimen>
+    <dimen name="margin_250">250dp</dimen>
+    <dimen name="dim_30">30dp</dimen>
+    <dimen name="bottom_30">30dp</dimen>
+    <dimen name="text_40">40sp</dimen>
+    <dimen name="dp650">650dp</dimen>
+    <dimen name="text_35">35sp</dimen>
+</resources>
